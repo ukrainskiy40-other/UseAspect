@@ -10,7 +10,7 @@ public class CommentService {
     private final Logger logger = Logger.getLogger(CommentService.class.getName());
 
     @ToLog
-    public void publishComment(ru.ukrainskiy.rnd.useaspect.Comment comment) {
+    public void publishComment(Comment comment) {
         logger.info("Publishing comment: " + comment.getText() + " author " + comment.getAuthor());
     }
 }
